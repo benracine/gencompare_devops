@@ -1,32 +1,32 @@
 **Steps towards creating a valid VM**
 
-- You will need to have Ruby and gems installed which are not addressed here
+You will need to have Ruby and gems installed which are not addressed here
 
 ~~~
 $ gem install vagrant
 ~~~
 
-- Grab the code and move into the working directory:
+Grab the code and move into the working directory:
 
 ~~~
 $ git clone git@github.com:benracine/gencompare_devops.git
 $ cd gencompare_devops
 ~~~
 
-- Per the [vagrant homepage](http://vagrantup.com/docs/getting-started/index.html), 
+Per the [vagrant homepage](http://vagrantup.com/docs/getting-started/index.html), 
 grab a template machine off of the web:
 
 ~~~
 $ vagrant box add lucid32 http://files.vagrantup.com/lucid32.box
 ~~~
 
-- Create the machine (from within the working directory):
+Create the machine (from within the working directory):
 
 ~~~
 $ vagrant up 
 ~~~
 
-- I couldn't figure out how to get around this silly workaround, but for now you must 
+I couldn't figure out how to get around this silly workaround, but for now you must 
 ssh into the machine and update the Debian package manager:
 
 ~~~
