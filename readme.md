@@ -1,11 +1,16 @@
 **Steps towards creating a valid VM**
 
 - You will need to have Ruby and gems installed which are not addressed here
+
 	$ gem install vagrant
+
 - Grab the code and move into the working directory:
+
 	$ git clone git@github.com:benracine/gencompare_devops.git
 	$ cd gencompare_devops
+
 - Per the [vagrant homepage](http://vagrantup.com/docs/getting-started/index.html):
+
 	$ vagrant box add lucid32 http://files.vagrantup.com/lucid32.box
 	$ vagrant up 
 	$ vagrant ssh
