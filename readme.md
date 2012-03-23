@@ -1,9 +1,11 @@
 # Creating a GenCompare Virtual Machine #
 
-You will need to have Ruby and gems installed which are not addressed here
+You will need to have Ruby and gems installed installed on the host machine.
+I don't address that here though. Once those are in place install vagrant.
 
 ~~~
 $ gem install vagrant
+$ gem install puppet 
 ~~~
 
 Grab the code and move into the working directory:
@@ -33,6 +35,12 @@ ssh into the machine and update the Debian package manager:
 $ vagrant ssh
 vagrant@lucid32:~$ sudo dpkg --configure -a 
 vagrant@lucid32:~$ exit
+~~~
+
+Now, you should be able to reload the machine be off
+
+~~~
+$ vagrant up 
 ~~~
 
 
