@@ -2,17 +2,17 @@ Steps towards creating a valid VM
 
 - Create a working folder:
 
-	$ mkdir gencompare_devops
-	$ git clone git@github.com:benracine/gencompare_devops.git
-	$ cd gencompare_devops
+		$ mkdir gencompare_devops
+		$ git clone git@github.com:benracine/gencompare_devops.git
+		$ cd gencompare_devops
 
 - Per the [vagrant homepage](http://vagrantup.com/docs/getting-started/index.html):
 
-	$ vagrant box add lucid32 http://files.vagrantup.com/lucid32.box
-	$ vagrant up 
-	$ vagrant ssh
-	vagrant@lucid32:~$ sudo dpkg --configure -a 
-	vagrant@lucid32:~$ exit
+		$ vagrant box add lucid32 http://files.vagrantup.com/lucid32.box
+		$ vagrant up 
+		$ vagrant ssh
+		vagrant@lucid32:~$ sudo dpkg --configure -a 
+		vagrant@lucid32:~$ exit
 
 
 ## I copied the cheat sheet below so that I can use it as a grab-bag ##
