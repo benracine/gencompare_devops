@@ -1,13 +1,12 @@
-# Notes #
-
-* List of things I've done
-- Something
-
-
-
-
-
-
+Steps towards creating a valid VM:
+	$ mkdir gencompare_devops
+	$ cd gencompare_devops
+	$ vagrant box add lucid32 http://files.vagrantup.com/lucid32.box
+	$ vagrant init lucid32
+	$ vagrant up 
+	$ vagrant ssh
+	vagrant@lucid32:~$ sudo dpkg --configure -a 
+	vagrant@lucid32:~$ exit
 
 
 # I copied the cheat sheet below so that I can use it as a grab-bag #
