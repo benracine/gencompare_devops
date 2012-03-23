@@ -1,6 +1,6 @@
 # Creating a GenCompare Virtual Machine #
 
-You will need to have Ruby and gems installed installed on the host machine.
+You will need to have Ruby, Gems and VirtualBox 4.0.x or 4.1.x installed installed on the host machine.
 I don't address that here though. Once those are in place install vagrant.
 
 ~~~
@@ -37,10 +37,10 @@ vagrant@lucid32:~$ sudo dpkg --configure -a
 vagrant@lucid32:~$ exit
 ~~~
 
-Now, you should be able to reload the machine be off
+Now, you should be able to reload the machine be off:
 
 ~~~
-$ vagrant up 
+$ vagrant reload
 ~~~
 
 

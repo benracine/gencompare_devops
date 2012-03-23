@@ -3,6 +3,7 @@
 group { "puppet":
         ensure => "present",
 }
+
 class apache {
   exec { 'apt-get update':
     command => '/usr/bin/apt-get update'
@@ -15,6 +16,14 @@ class apache {
    require => Package["apache2"],
  }
 }
-
 include apache
+
+notify { "This message is getting logged on the agent node.": }
+
+notify { "Mac warning":
+    message => $operatingsystem ? {
+        'Darwin' => "This seems to be a Mac.",
+        default => "And I'm a PC.",
+    },
+}
 
