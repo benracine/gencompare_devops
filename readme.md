@@ -9,7 +9,8 @@
 		$ git clone git@github.com:benracine/gencompare_devops.git
 		$ cd gencompare_devops
 
-- Per the [vagrant homepage](http://vagrantup.com/docs/getting-started/index.html):
+- Per the [vagrant homepage](http://vagrantup.com/docs/getting-started/index.html)
++ Grab a base box template from the web:
 
 		$ vagrant box add lucid32 http://files.vagrantup.com/lucid32.box
 		$ vagrant up 
