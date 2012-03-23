@@ -13,21 +13,21 @@ $ git clone git@github.com:benracine/gencompare_devops.git
 $ cd gencompare_devops
 ~~~
 
-- Per the [vagrant homepage](http://vagrantup.com/docs/getting-started/index.html)
-	- Grab a template machine off of the web
+- Per the [vagrant homepage](http://vagrantup.com/docs/getting-started/index.html), 
+grab a template machine off of the web
 
 ~~~
 $ vagrant box add lucid32 http://files.vagrantup.com/lucid32.box
 ~~~
 
-	- Create the machine (from within the working directory)
+- Create the machine (from within the working directory)
 
 ~~~
 $ vagrant up 
 ~~~
 
-	- I couldn't figure out how to get around this silly workaround, but for now you
-	must ssh into the machine and update the Debian package manager.
+- I couldn't figure out how to get around this silly workaround, but for now you must 
+ssh into the machine and update the Debian package manager.
 
 ~~~
 $ vagrant ssh
