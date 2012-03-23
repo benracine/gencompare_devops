@@ -1,8 +1,19 @@
-# Header 1 #
+# Notes #
+
+* List of things I've done
+- Something
+
+
+
+
+
+
+
+
+# I copied the cheat sheet below so that I can use it as a grab-bag #
+
 ## Header 2 ##
 ### Header 3 ###             (Hashes on right are optional)
-#### Header 4 ####
-##### Header 5 #####
 
 ## Markdown plus h2 with a custom ID ##         {#id-goes-here}
 [Link back to H2](#id-goes-here)
