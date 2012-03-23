@@ -1,4 +1,5 @@
 Steps towards creating a valid VM:
+
 	$ mkdir gencompare_devops
 	$ cd gencompare_devops
 	$ vagrant box add lucid32 http://files.vagrantup.com/lucid32.box
