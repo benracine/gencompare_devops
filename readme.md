@@ -1,8 +1,7 @@
-Steps towards creating a valid VM
+**Steps towards creating a valid VM**
 
-- Create a working folder:
+- Grab the code and move into the working directory:
 
-		$ mkdir gencompare_devops
 		$ git clone git@github.com:benracine/gencompare_devops.git
 		$ cd gencompare_devops
 
