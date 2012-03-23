@@ -1,4 +1,4 @@
-**Steps towards creating a valid VM**
+# Creating a GenCompare Virtual Machine #
 
 You will need to have Ruby and gems installed which are not addressed here
 
@@ -34,6 +34,24 @@ $ vagrant ssh
 vagrant@lucid32:~$ sudo dpkg --configure -a 
 vagrant@lucid32:~$ exit
 ~~~
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ## I copied the cheat sheet below so that I can use it as a grab-bag ##
