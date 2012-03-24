@@ -43,6 +43,7 @@ Now, you should be able to reload the machine be off:
 $ vagrant reload
 ~~~
 
+A simple test to prove that the Apache man
 
 
 

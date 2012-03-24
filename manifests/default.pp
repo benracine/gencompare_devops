@@ -1,5 +1,3 @@
-# Basic Puppet Apache manifest
-
 group { "puppet":
         ensure => "present",
 }
@@ -17,13 +15,4 @@ class apache {
  }
 }
 include apache
-
-notify { "This message is getting logged on the agent node.": }
-
-notify { "Mac warning":
-    message => $operatingsystem ? {
-        'Darwin' => "This seems to be a Mac.",
-        default => "And I'm a PC.",
-    },
-}
 
