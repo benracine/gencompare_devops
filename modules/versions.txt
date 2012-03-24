@@ -1,0 +1,48 @@
+Rather than using git submodules, we've copied the contents of these
+puppet modules into the FlexInterface repository directly.
+
+We should consider creating forks of these repos inside the CSNW
+organization, so that we can tag them as we desire, and commit patches
+to them directly.  That would also make it easier to use git
+submodules since we would have control over the various branches/tags
+that we would be pinning to when adding them as submodules to the
+Flexinterface repo.
+
+apt:
+  repo: https://github.com/puppetlabs/puppet-apt
+  branch: master
+  commit: 749c3e185d2ae5816fa19645aa7b8928298487a0
+
+nginx:
+  repo: https://github.com/puppetlabs/puppetlabs-nginx
+  branch: master
+  commit: a6f98a88c2caf09392c2af35ce26385cb3eea737
+  patched:
+    manifests/params.pp
+    templates/vhost/vhost_location_proxy.erb
+
+postgresql:
+  repo: https://github.com/simplegeo/puppet-postgresql
+  branch: master
+  commit: e74ffd096c2aea300e435f5baf775e7783e66d6f
+  patched:
+    manifests/classes/postgresql-base.pp
+    manifests/definitions/postgresql-user.pp
+
+rabbitmq:
+  repo: https://github.com/puppetlabs/puppetlabs-rabbitmq
+  branch: master
+  commit: 126dbdbb0193ee89a1d3218030acda35017917c5
+  patched:
+    lib/puppet/type/rabbitmq_user.rb
+    lib/puppet/provider/rabbitmq_user/rabbitmqctl.rb
+
+stdlib:
+  repo: https://github.com/puppetlabs/puppetlabs-stdlib
+  branch: master
+  commit: 05018f68199470f5f43e68bd54c7a39c9e8b3a85
+
+vcsrepo:
+  repo: https://github.com/puppetlabs/puppet-vcsrepo
+  branch: master
+  commit: 4a89ed4d3b8348a53e2f27429b59a28c81b29fd3
